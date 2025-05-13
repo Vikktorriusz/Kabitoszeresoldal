@@ -11,17 +11,48 @@
 </head>
 <body>
     <div id="falling-container">
-        <header>
-            <nav class="navbar">
-                <a class="navbar-link" href=""><i class="fas fa-angle-left"></i>Vissza</a>
-        </header>
         
-        <div id="content" class="col-md-12">
-          <div class="container p-5 my-5">
-              <h1 class="text-center">Kábítószerek</h1>
-
+        <div id="content">
+          <div id="main-container" class="container col-lg-12 p-5 my-5">
+              <h1 id="main-h1" class="text-center">Kábítószerek</h1>
+                <div class="row">
+                  <div style="padding: 40px;" class="col-lg-4">
+                    <div id="card" class="card">
+                      <img src="/assets/img/kanabisz.webp" class="card-img-top" alt="Kannabisz">
+                        <div class="card-body">
+                          <h1 class="card-title">Kannabisz</h1>
+                        </div>
+                    </div>
+                  </div>
+                  <div style="padding: 40px;" class="col-lg-4">
+                    <div id="card" class="card">
+                      <img src="/assets/img/kanabisz.webp" class="card-img-top" alt="Kannabisz">
+                        <div class="card-body">
+                          <h1 class="card-title">Ecstasy</h1>
+                        </div>
+                    </div>
+                  </div>
+                  <div style="padding: 40px;" class="col-lg-4">
+                    <div id="card" class="card">
+                      <img src="/assets/img/kanabisz.webp" class="card-img-top" alt="Kannabisz">
+                        <div class="card-body">
+                          <h1 class="card-title">Kokain</h1>
+                        </div>
+                    </div>
+                  </div>
+                </div>
           </div>
-        </div>
+
+
+<footer style="position: fixed; bottom: 0; width: 100%; margin-left: -20px;" class="bg-dark text-center text-white">
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2025 Copyright:
+    <p class="text-white">Készítették: Oravecz Botond, Rendek Richárd Zalán</p>
+    <p>Az oldal tanulási célal jött létre(Nem támogat semmit az oldalon említettekből)</p>
+  </div>
+</footer>
+
+        
 
     <script>
         const fallingContainer = document.getElementById('falling-container');
@@ -32,7 +63,7 @@
     'https://cdn-icons-png.flaticon.com/128/2160/2160424.png'   
   ];
 
-   const maxImages = 30;
+   const maxImages = 35;
 
   class FallingImage {
     constructor(src) {
